@@ -1,10 +1,10 @@
 #
 # This policy configuration will be used by all products that
-# inherit from CM and XenonHD
+# inherit from CM and Minimal
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/xenonhd/sepolicy
+    vendor/minimal/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \

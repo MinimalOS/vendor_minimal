@@ -1,4 +1,4 @@
 # Inherit common stuff
-$(call inherit-product, vendor/xenonhd/products/common.mk)
+$(call inherit-product, vendor/minimal/products/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/xenonhd/overlay/common_tablet
+PRODUCT_PACKAGE_OVERLAYS += vendor/minimal/overlay/common_tablet

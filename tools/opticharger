@@ -4,7 +4,7 @@
 # Shrinks apks by running pngquant or pngcrush or optipng or pngout on png images
 #
 
-. $ANDROID_BUILD_TOP/vendor/xenonhd/tools/colors
+. $ANDROID_BUILD_TOP/vendor/minimal/tools/colors
 
 OUT_TARGET_HOST=$(uname -a | grep Darwin)
 if [ -z "$OUT_TARGET_HOST" ]
