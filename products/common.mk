@@ -22,9 +22,7 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     SoundRecorder \
     Torch \
-    VoicePlus \
-    KernelTweaker \
-    XenonWallpapers
+    VoicePlus
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
