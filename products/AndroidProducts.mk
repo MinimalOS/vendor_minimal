@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
         $(LOCAL_DIR)/minimal_bacon.mk \
 	$(LOCAL_DIR)/minimal_crespo.mk \
-	$(LOCAL_DIR)/minimal_cancro.mk \
+	$(LOCAL_DIR)/minimal_condor.mk \
 	$(LOCAL_DIR)/minimal_d2spr.mk \
 	$(LOCAL_DIR)/minimal_d2bst.mk \
 	$(LOCAL_DIR)/minimal_d2att.mk \
