@@ -34,6 +34,7 @@ PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/minimal_m7tmo.mk \
 	$(LOCAL_DIR)/minimal_n7000.mk \
 	$(LOCAL_DIR)/minimal_n7100.mk \
+	$(LOCAL_DIR)/minimal_pepper.mk \
 	$(LOCAL_DIR)/minimal_r950.mk \
 	$(LOCAL_DIR)/minimal_shamu.mk \
 	$(LOCAL_DIR)/minimal_t0lte.mk \
