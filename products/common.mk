@@ -14,11 +14,11 @@ PRODUCT_PACKAGES += \
     Dialer \
     Eleven \
     LatinImeDictionaryPack \
+    Launcher3 \
     libemoji \
     libscreenrecorder \
     LockClock \
     ScreenRecorder \
-    SlimLauncher \
     SoundRecorder \
     Torch \
     VoicePlus
