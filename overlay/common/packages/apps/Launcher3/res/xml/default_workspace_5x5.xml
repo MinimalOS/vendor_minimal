@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The Android Open Source Project
+<!-- Copyright (C) 2009 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.slim.slimlauncher">
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
     <!-- Far-left screen [0] -->
 
     <!-- Left screen [1] -->
@@ -43,28 +43,14 @@
         launcher:x="0"
         launcher:y="3" />
 
-    <!-- Right screen [3] -->
-    <favorite
-        launcher:packageName="com.android.gallery3d"
-        launcher:className="com.android.gallery3d.app.Gallery"
-        launcher:screen="3"
-        launcher:x="1"
-        launcher:y="3" />
-    <favorite
-        launcher:packageName="com.android.settings"
-        launcher:className="com.android.settings.Settings"
-        launcher:screen="3"
-        launcher:x="2"
-        launcher:y="3" />
-
     <!-- Far-right screen [4] -->
 
     <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
     <!-- Dialer, Contacts, [All Apps], Messaging, Browser -->
     <resolve
         launcher:container="-101"
-        launcher:screen="1"
-        launcher:x="1"
+        launcher:screen="0"
+        launcher:x="0"
         launcher:y="0" >
         <favorite launcher:uri="#Intent;action=android.intent.action.DIAL;end" />
         <favorite launcher:uri="tel:123" />
@@ -79,23 +65,14 @@
         launcher:packageName="com.android.contacts"
         launcher:className="com.android.contacts.activities.PeopleActivity"
         launcher:container="-101"
-        launcher:screen="2"
-        launcher:x="2"
-        launcher:y="0" />
-
-    <shortcut
-        launcher:uri="#Intent;action=android.intent.action.VIEW;launchFlags=0x10000000;component=com.slim.slimlauncher/.Launcher;sourceBounds=12%201167%20276%201463;B.slim_launcher_shortcut=true;l.profile=0;S.shortcut_value=**open_app_drawer**;end"
-        launcher:icon="@drawable/ic_allapps"
-        launcher:title="@string/all_apps_button_label"
-        launcher:container="-101"
-        launcher:screen="3"
-        launcher:x="3"
+        launcher:screen="1"
+        launcher:x="1"
         launcher:y="0" />
 
     <resolve
         launcher:container="-101"
-        launcher:screen="4"
-        launcher:x="4"
+        launcher:screen="3"
+        launcher:x="3"
         launcher:y="0" >
         <favorite
             launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MESSAGING;end" />
@@ -110,8 +87,8 @@
     </resolve>
     <resolve
         launcher:container="-101"
-        launcher:screen="5"
-        launcher:x="5"
+        launcher:screen="4"
+        launcher:x="4"
         launcher:y="0" >
         <favorite
             launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MUSIC;end" />
@@ -120,4 +97,5 @@
             launcher:packageName="com.cyanogenmod.eleven.ElevenApplication"
             launcher:className="com.cyanogenmod.eleven.ui.activities.HomeActivity" />
     </resolve>
+
 </favorites>
