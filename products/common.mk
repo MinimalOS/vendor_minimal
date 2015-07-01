@@ -7,12 +7,10 @@ PRODUCT_DEVICE := generic
 PRODUCT_PACKAGE_OVERLAYS += vendor/minimal/overlay/common
 
 PRODUCT_PACKAGES += \
-    AudioFX \
     BluetoothExt \
     DeskClock \
     Development \
     Dialer \
-    Eleven \
     LatinImeDictionaryPack \
     Launcher3 \
     libemoji \
