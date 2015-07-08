@@ -155,10 +155,6 @@ PRODUCT_COPY_FILES += \
     vendor/minimal/proprietary/common/xbin/zip:system/xbin/zip \
     vendor/minimal/proprietary/common/xbin/zipalign:system/xbin/zipalign
 
-# AdAway
-PRODUCT_COPY_FILES += \
-    vendor/minimal/proprietary/common/app/org.adaway.apk:system/app/org.adaway.apk
-
 # BitSyko Layers
 PRODUCT_COPY_FILES += \
     vendor/minimal/proprietary/common/app/com.lovejoy777.rroandlayersmanager.apk:system/app/com.lovejoy777.rroandlayersmanager/base.apk

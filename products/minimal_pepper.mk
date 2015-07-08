@@ -33,4 +33,3 @@ PRODUCT_COPY_FILES +=  \
 	PRODUCT_MANUFACTURER := Sony
 	PRODUCT_MODEL := Xperia Sola
 	PRODUCT_NAME := minimal_pepper
-	

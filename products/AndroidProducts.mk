@@ -1,6 +1,6 @@
 PRODUCT_MAKEFILES := \
-        $(LOCAL_DIR)/minimal_armani.mk \
-        $(LOCAL_DIR)/minimal_bacon.mk \
+	$(LOCAL_DIR)/minimal_armani.mk \
+	$(LOCAL_DIR)/minimal_bacon.mk \
 	$(LOCAL_DIR)/minimal_crespo.mk \
 	$(LOCAL_DIR)/minimal_cancro.mk \
 	$(LOCAL_DIR)/minimal_condor.mk \
@@ -47,7 +47,7 @@ PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/minimal_toroplus.mk \
 	$(LOCAL_DIR)/minimal_trltetmo.mk \
 	$(LOCAL_DIR)/minimal_trltexx.mk \
-        $(LOCAL_DIR)/minimal_victara.mk \
+	$(LOCAL_DIR)/minimal_victara.mk \
 	$(LOCAL_DIR)/minimal_vigor.mk \
 	$(LOCAL_DIR)/minimal_xt925.mk \
 	$(LOCAL_DIR)/minimal_xt926.mk \
