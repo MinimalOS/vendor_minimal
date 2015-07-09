@@ -83,6 +83,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.mode=OPTIONAL \
     ro.setupwizard.enterprise_mode=1 \
+    ro.layers.noIcon=noIcon \
     ro.media.enc.jpeg.quality=100 \
     ro.media.dec.jpeg.memcap=8000000 \
     ro.media.enc.hprof.vid.bps=8000000 \
