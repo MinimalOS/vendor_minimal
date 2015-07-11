@@ -31,6 +31,6 @@ PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-   PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:5.1/LMY47O/1783956:user/release-keys \
-   PRIVATE_BUILD_DESC="occam-user 5.1 LMY47O 1783956 release-keys"
+   PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:5.1.1/LYZ28E/1914015:user/release-keys \
+   PRIVATE_BUILD_DESC="occam-user 5.1.1 LYZ28E 1914015 release-keys"
 

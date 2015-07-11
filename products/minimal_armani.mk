@@ -32,4 +32,7 @@ PRODUCT_MANUFACTURER := XIAOMI
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Xiaomi/armani/armani:5.1.1/LMY47V/5.4.24:userdebug/test-keys PRIVATE_BUILD_DESC="armani-userdebug 5.1.1 LMY47V 5.4.24 test-keys"
+# Build prop overrides
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT="Xiaomi/armani/armani:5.1.1/LYZ28E:userdebug/test-keys" \
+    PRIVATE_BUILD_DESC="armani-userdebug 5.1.1 LYZ28E test-keys"
