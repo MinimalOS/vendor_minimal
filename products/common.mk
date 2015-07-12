@@ -70,10 +70,14 @@ PRODUCT_PACKAGES += \
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegadec \
-    libstagefright_soft_ffmpegvdec \
-    libFFmpegExtractor \
+    libffmpeg_extractor \
+    libffmpeg_omx \
 	media_codecs_ffmpeg.xml
+	
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.sf.omx-plugin=libffmpeg_omx.so \
+    media.sf.extractor-plugin=libffmpeg_extractor.so
+	
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
