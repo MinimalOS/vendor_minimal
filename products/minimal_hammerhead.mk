@@ -10,6 +10,9 @@ $(call inherit-product, vendor/minimal/configs/telephony.mk)
 # Inherit common build.prop overrides
 -include vendor/minimal/products/common_versions.mk
 
+# Extra hammerhead overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/minimal/overlay/hammerhead
+
 # Copy hammerhead specific prebuilt files
 PRODUCT_COPY_FILES +=  \
     vendor/minimal/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
