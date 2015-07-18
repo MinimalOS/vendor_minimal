@@ -1,3 +1,4 @@
+add_lunch_combo minimal_aries-userdebug
 add_lunch_combo minimal_bacon-userdebug
 add_lunch_combo minimal_condor-userdebug
 add_lunch_combo minimal_crespo-userdebug
