@@ -164,7 +164,7 @@ PRODUCT_COPY_FILES += \
 
 # BitSyko Layers
 PRODUCT_COPY_FILES += \
-    vendor/minimal/proprietary/common/app/com.lovejoy777.rroandlayersmanager.apk:system/app/com.lovejoy777.rroandlayersmanager/base.apk
+    vendor/minimal/proprietary/common/app/com.lovejoy777.rroandlayersmanager.apk:system/app/LayersManager/LayersManager.apk
 
 # SuperSU
 PRODUCT_COPY_FILES += \
