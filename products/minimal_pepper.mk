@@ -20,6 +20,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Copy pepper specific prebuilt files
 PRODUCT_COPY_FILES +=  \
     device/sony/pepper/prebuilt/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/minimal/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
     vendor/minimal/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/minimal/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 

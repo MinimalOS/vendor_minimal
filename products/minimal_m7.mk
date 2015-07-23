@@ -30,4 +30,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_m7 BUILD_ID=JZO54K BUILD_FINGER
      
 PRODUCT_COPY_FILES += \
         vendor/minimal/proprietary/hybrid/hybrid_m7_no_nav.conf:system/etc/beerbong/properties.conf \
-        vendor/minimal/proprietary/m7/media/bootanimation.zip:system/media/bootanimation.zip
+        vendor/minimal/proprietary/m7/media/bootanimation.zip:system/media/bootanimation.zip \
+        vendor/minimal/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3
