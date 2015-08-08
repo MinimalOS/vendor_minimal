@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="carrier_settings_title">Carrier settings</string>
-    <!-- carrier settings menu -->
-    <string name="carrier_settings" translatable="false">com.lge.update</string>
-    <string name="carrier_settings_menu" translatable="false">com.lge.update.SprintUpdateSetting</string>    
-    
-</resources>

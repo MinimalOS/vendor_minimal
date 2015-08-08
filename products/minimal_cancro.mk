@@ -2,26 +2,23 @@
 $(call inherit-product, device/xiaomi/cancro/full_cancro.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/minimal/products/common.mk)
+$(call inherit-product, vendor/minimal/config/common.mk)
 
 # Telephony
-$(call inherit-product, vendor/minimal/configs/telephony.mk)
+$(call inherit-product, vendor/minimal/config/telephony.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/minimal/configs/nfc_enhanced.mk)
+$(call inherit-product, vendor/minimal/config/nfc_enhanced.mk)
 
 # Inherit common build.prop overrides
--include vendor/minimal/products/common_versions.mk
+-include vendor/minimal/config/common_versions.mk
 
-# Copy hammerhead specific prebuilt files
+# Copy cancro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/minimal/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/minimal/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
-    vendor/minimal/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/minimal/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/minimal/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # Inherit drm blobs
--include vendor/minimal/products/common_drm.mk
+-include vendor/minimal/config/common_drm.mk
 
 # Setup device specific product configuration.
 PRODUCT_NAME := minimal_cancro
