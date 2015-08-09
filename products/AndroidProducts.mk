@@ -11,3 +11,4 @@ PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/minimal_mako.mk \
 	$(LOCAL_DIR)/minimal_pepper.mk \
 	$(LOCAL_DIR)/minimal_shamu.mk \
+	$(LOCAL_DIR)/minimal_titan.mk
