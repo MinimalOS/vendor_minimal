@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     OpenDelta \
     ScreenRecorder \
     SoundRecorder \
+    Torch \
     VoicePlus \
     WallpaperPicker
 
@@ -188,4 +189,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Misc
 PRODUCT_COPY_FILES +=  \
-    vendor/minimal/prebuilt/common/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
+    vendor/minimal/prebuilt/common/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3
