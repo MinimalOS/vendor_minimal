@@ -136,6 +136,12 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/minimal/overlay/dictionaries
 PRODUCT_COPY_FILES += \
     vendor/minimal/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/minimal/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/minimal/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/minimal/prebuilt/common/bin/50-minimal.sh:system/addon.d/50-minimal.sh
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/minimal/prebuilt/common/etc/init.local.rc:root/init.minimal.rc \
