@@ -103,8 +103,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/xenonhd/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/xenonhd/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions 
+    vendor/minimal/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/minimal/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions 
 
 # Audio
 $(call inherit-product-if-exists, frameworks/base/data/sounds/OldAudio.mk)
