@@ -23,6 +23,12 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     WallpaperPicker
 
+# Bootanimation
+PRODUCT_COPY_FILES += vendor/minimal/prebuilt/common/bootanimation/$(MINIMAL_BOOTANIMATION_VARIANT).zip:system/media/bootanimation.zip
+
+#Let's not break stuff for now
+PRODUCT_COPY_FILES += vendor/minimal/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
@@ -123,8 +129,6 @@ $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage12_48.
 PRODUCT_COPY_FILES +=  \
     vendor/minimal/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/minimal/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
-
-
 
 # Enable ADB authentication and root
 ifneq ($(TARGET_BUILD_VARIANT),eng)

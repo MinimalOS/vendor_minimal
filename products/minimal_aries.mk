@@ -8,8 +8,7 @@ $(call inherit-product, vendor/minimal/config/common.mk)
 -include vendor/minimal/config/common_versions.mk
 
 # Copy aries specific prebuilt files
-PRODUCT_COPY_FILES +=  \
-    vendor/minimal/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+MINIMAL_BOOTANIMATION_VARIANT := 720
 
 # Inherit drm blobs eye
 -include vendor/minimal/config/common_drm.mk

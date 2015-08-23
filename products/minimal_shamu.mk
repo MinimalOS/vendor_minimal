@@ -11,8 +11,7 @@ $(call inherit-product, vendor/minimal/config/telephony.mk)
 -include vendor/minimal/config/common_versions.mk
 
 # Copy shamu specific prebuilt files
-PRODUCT_COPY_FILES +=  \
-    vendor/minimal/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+MINIMAL_BOOTANIMATION_VARIANT := 1440
 
 # Inherit drm blobs
 -include vendor/minimal/config/common_drm.mk

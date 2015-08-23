@@ -11,8 +11,7 @@ $(call inherit-product, vendor/minimal/config/common.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/minimal/overlay/grouper
 
 # Copy flo specific prebuilt files
-PRODUCT_COPY_FILES +=  \
-    vendor/minimal/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+MINIMAL_BOOTANIMATION_VARIANT := 1200
 
 # Inherit drm blobs
 -include vendor/minimal/config/common_drm.mk
