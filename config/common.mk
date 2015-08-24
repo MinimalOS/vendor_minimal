@@ -23,11 +23,13 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     WallpaperPicker
 
-# Bootanimation
+# Bootanimation variants (copy only if it exists)
+ifneq ("$(wildcard $(vendor/minimal/prebuilt/common/bootanimation/$(MINIMAL_BOOTANIMATION_VARIANT).zip))","")
 PRODUCT_COPY_FILES += vendor/minimal/prebuilt/common/bootanimation/$(MINIMAL_BOOTANIMATION_VARIANT).zip:system/media/bootanimation.zip
-
+else
 #Let's not break stuff for now
 PRODUCT_COPY_FILES += vendor/minimal/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+endif
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
