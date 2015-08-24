@@ -23,6 +23,12 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     WallpaperPicker
 
+# Bootanimation
+PRODUCT_COPY_FILES += vendor/minimal/prebuilt/common/bootanimation/$(MINIMAL_BOOTANIMATION_VARIANT).zip:system/media/bootanimation.zip
+
+#Let's not break stuff for now
+PRODUCT_COPY_FILES += vendor/minimal/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
@@ -101,6 +107,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     ro.delta.version=VERSION
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/minimal/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/minimal/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions 
+
 # Audio
 $(call inherit-product-if-exists, frameworks/base/data/sounds/OldAudio.mk)
 $(call inherit-product-if-exists, frameworks/base/data/sounds/NewAudio.mk)
@@ -119,8 +130,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/minimal/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/minimal/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
-
-
 # Enable ADB authentication and root
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -135,12 +144,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/minimal/overlay/dictionaries
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
     vendor/minimal/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
-
-# Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/minimal/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/minimal/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/minimal/prebuilt/common/bin/50-minimal.sh:system/addon.d/50-minimal.sh
 
 # init.d support
 PRODUCT_COPY_FILES += \
