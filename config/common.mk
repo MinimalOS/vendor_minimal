@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
     DeskClock \
     Development \
     Dialer \
+    Gallery2 \
     LatinImeDictionaryPack \
     Launcher3 \
     libemoji \
