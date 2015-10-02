@@ -1,4 +1,4 @@
-# Inherit AOSP device configuration for grouper.
+# Inherit AOSP device configuration for tilapia.
 $(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 
 # Inherit common product files.
@@ -10,9 +10,8 @@ $(call inherit-product, vendor/minimal/config/telephony.mk)
 # Inherit common build.prop overrides
 -include vendor/minimal/config/common_versions.mk
 
-# Copy hammerhead specific prebuilt files
-PRODUCT_COPY_FILES +=  \
-    vendor/minimal/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+# Copy tilapia specific prebuilt files
+MINIMAL_BOOTANIMATION_VARIANT := 1280
 
 # Inherit drm blobs
 -include vendor/minimal/config/common_drm.mk
